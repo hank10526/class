@@ -12,15 +12,28 @@ h1 {color:blue; font-size:60px;}
 
 h2 {color:#11ff1f; font-size:40px;}
 
+
 </style>
+<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "林憲墉";
+		}
+	</script>
+
+
 </head>
 <body>
 	<h1>>林憲墉</h1><br>
 `<h2>LIN,SIAN-YONG</h2><br>
 <a href="mailto:hank10526@gmail.com">E-Mail: hank10526@</a>
 <a href="tel:090000000">my phone number</a>
-<img src="cliff.jpg"> one image about cliff<img>
-<img src="mountain.jpg"> one image about mountain<img>
+
 大象席地而坐電影配樂<br>
 
 <audio controls>
@@ -63,12 +76,13 @@ h2 {color:#11ff1f; font-size:40px;}
 <table width="70%">
 		<tr>
 			<td>
-				<img src="cliff.jpg" width="100%"></img>
+				<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"><h1></h1></img>
+
 			</td>
 
 			<td>
-				<h1>楊子青</h1>
-				<h2>Tzyy-Ching Yang</h2>
+				<h1>411322419</h1>
+				<h2 id="h2text">Tzyy-Ching Yang</h2>
 			</td>
 		</tr>
 	</table>
